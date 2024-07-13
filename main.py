@@ -50,8 +50,6 @@ class CNN(nn.Module):
 
 model = CNN()
 model.load_state_dict(torch.load('model.pth'))
-# model = torch.load('model.pth')
-# print("model ", model)
 model.eval()  # Set the model to evaluation mode
 
 def extract_features(img):
